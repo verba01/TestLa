@@ -1,8 +1,9 @@
 
 
 ```shell
-gunicorn main:main_app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000
 ```
+docker build -t my-fastapi-app .
+docker run -p 8000:8000 my-fastapi-app
 
 # TestLa
 # TestLa
